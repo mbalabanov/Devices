@@ -4,4 +4,4 @@ This is a class diagram describing a device power management system. Each powere
 
 Broadcast devices can be controlled by a remote control.
 
-[Devices UML Class-Diagram](DevicesUML.png)
+![Devices UML Class-Diagram](DevicesUML.png)
