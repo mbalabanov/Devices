@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="2hzB7h1dTjumFmZ8ST3w" name="Page-1">
-        <mxGraphModel dx="506" dy="394" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="594" dy="463" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -289,14 +289,14 @@
                         <mxPoint x="1050" y="1090" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="192" style="edgeStyle=none;html=1;entryX=0.44;entryY=0.994;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=block;endFill=0;exitX=0.232;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="163" target="189" edge="1">
+                <mxCell id="192" style="edgeStyle=none;html=1;entryX=0.427;entryY=1.081;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=block;endFill=0;exitX=0.232;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="163" target="231" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="220" y="740" as="targetPoint"/>
                         <mxPoint x="170" y="1060" as="sourcePoint"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="163" value="RemoteControl" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-                    <mxGeometry x="60" y="1180" width="460" height="268" as="geometry"/>
+                    <mxGeometry x="60" y="1180" width="460" height="346" as="geometry"/>
                 </mxCell>
                 <mxCell id="167" value="- controlledDevices: ArrayList&lt; BroadcastReceiver &gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="163" vertex="1">
                     <mxGeometry y="26" width="460" height="26" as="geometry"/>
@@ -322,11 +322,20 @@
                 <mxCell id="212" value="+ remoteDecreaseVolumeAllDevices(  ): boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="163">
                     <mxGeometry y="190" width="460" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="208" value="+ addDevice( addedDevice: BroadcastDevice ): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="163">
+                <mxCell id="234" value="+ remotePowerOn( deviceToPowerOn: BroadcastReceiver )" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="163">
                     <mxGeometry y="216" width="460" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="209" value="+ removeDevice( removedDevice: BroadcastDevice ): boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="163">
+                <mxCell id="233" value="+ remotePowerOff( deviceToPowerOff: BroadcastReceiver ): boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="163">
                     <mxGeometry y="242" width="460" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="208" value="+ addDevice( addedDevice: BroadcastDevice ): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="163">
+                    <mxGeometry y="268" width="460" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="209" value="+ removeDevice( removedDevice: BroadcastDevice ): boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="163">
+                    <mxGeometry y="294" width="460" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="232" value="+ getControlledDevices(  ): String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="163">
+                    <mxGeometry y="320" width="460" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="173" value="PoweredDevice" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
                     <mxGeometry x="60" y="150" width="250" height="216" as="geometry"/>
@@ -362,7 +371,7 @@
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="184" value="BatteryPoweredDevice" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-                    <mxGeometry x="60" y="480.30999999999995" width="250" height="112" as="geometry"/>
+                    <mxGeometry x="60" y="480.30999999999995" width="250" height="164" as="geometry"/>
                 </mxCell>
                 <mxCell id="186" value="- batteryLevel: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="184" vertex="1">
                     <mxGeometry y="26" width="250" height="26" as="geometry"/>
@@ -375,6 +384,12 @@
                 </mxCell>
                 <mxCell id="189" value="+ chargeBattery( ): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="184" vertex="1">
                     <mxGeometry y="86" width="250" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="230" value="+ depleteBattery(usage: int): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="184">
+                    <mxGeometry y="112" width="250" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="231" value="+ checkBatteryEmpty(): boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="184">
+                    <mxGeometry y="138" width="250" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="204" value="DeviceTest" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
                     <mxGeometry x="600" y="1440" width="250" height="150" as="geometry"/>
