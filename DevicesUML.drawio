@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="2hzB7h1dTjumFmZ8ST3w" name="Page-1">
-        <mxGraphModel dx="594" dy="463" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="414" dy="322" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -84,7 +84,7 @@
                 <mxCell id="36" value="+ getBrightness( ): int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="31" vertex="1">
                     <mxGeometry y="86" width="260" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="120" style="edgeStyle=none;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;dashed=1;endArrow=block;endFill=0;entryX=0.631;entryY=1.016;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="44" target="227" edge="1">
+                <mxCell id="120" style="edgeStyle=none;html=1;exitX=0.618;exitY=-0.006;exitDx=0;exitDy=0;dashed=1;endArrow=block;endFill=0;entryX=0.631;entryY=1.016;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" parent="1" source="44" target="227" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="1194.857142857143" y="700.31" as="targetPoint"/>
                     </mxGeometry>
@@ -197,7 +197,7 @@
                     <mxGeometry y="346" width="250" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="87" value="RemoteControllable" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-                    <mxGeometry x="1037" y="480" width="303" height="130" as="geometry"/>
+                    <mxGeometry x="1000" y="480" width="303" height="130" as="geometry"/>
                 </mxCell>
                 <mxCell id="88" value="+ remotePowerOn( ): void &lt;&lt; abstract &gt;&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="87" vertex="1">
                     <mxGeometry y="26" width="303" height="26" as="geometry"/>
@@ -212,9 +212,9 @@
                     <mxGeometry y="104" width="303" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="92" value="GridPoweredDevicesManager" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-                    <mxGeometry x="837" y="150" width="440" height="242" as="geometry"/>
+                    <mxGeometry x="860" y="150" width="440" height="242" as="geometry"/>
                 </mxCell>
-                <mxCell id="93" value="- devices: ArrayList &lt; GridPoweredDevice &gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="92" vertex="1">
+                <mxCell id="93" value="- managedDevices: ArrayList &lt; GridPoweredDevice &gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="92" vertex="1">
                     <mxGeometry y="26" width="440" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="95" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="92" vertex="1">
@@ -226,7 +226,7 @@
                 <mxCell id="98" value="+ removeDevice( int: index ): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="92" vertex="1">
                     <mxGeometry y="86" width="440" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="97" value="+ getAllDevices( ): ArrayList &lt; GridPoweredDevice &gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="92" vertex="1">
+                <mxCell id="97" value="+ getAllManagedDevices( ): String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="92" vertex="1">
                     <mxGeometry y="112" width="440" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="99" value="+ powerOnAllDevices( ): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="92" vertex="1">
@@ -325,7 +325,7 @@
                 <mxCell id="234" value="+ remotePowerOn( deviceToPowerOn: BroadcastReceiver )" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="163">
                     <mxGeometry y="216" width="460" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="233" value="+ remotePowerOff( deviceToPowerOff: BroadcastReceiver ): boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="163">
+                <mxCell id="233" value="+ remotePowerOff( deviceToPowerOff: BroadcastReceiver )" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="163">
                     <mxGeometry y="242" width="460" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="208" value="+ addDevice( addedDevice: BroadcastDevice ): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="163">
