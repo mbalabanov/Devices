@@ -8,7 +8,7 @@ There are four classes of powered devices:
 - Radio
 - Television
 
-All devices classes are subclasses of the super-class PoweredDevices. The classes for Radio and Television inherit the class BroadcastDevices, which in turn inherits the super-class PoweredDevice. The BroadCastDevice class also implements the interface RemoteControllable.
+All devices classes are subclasses of the super-class PoweredDevices. The classes for Radio and Television inherit the class BroadcastDevices, which in turn inherits the super-class PoweredDevice. The BroadCastDevice class also implements the interface RemoteControllable and has a loose association with the RemoteControl class.
 
 ## UML Class Diagram
 ![Devices UML Class-Diagram](DevicesUML.png)
