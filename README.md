@@ -6,11 +6,14 @@ In general, any powered device can be powered on and off individually. There are
 - Grid-powered devices
 - Battery-powered devices
 
-There are four classes of grid-powered devices:
+There are four types of grid-powered devices:
 - CoffeeMaker
 - TableLamp
 - Radio
 - Television
+
+There is one type of battery-powered device:
+- RemoteControl
 
 A device manager can power multiple or all grid-powered devices on and off. A type of device called BroadcastReceivers can be controlled by a RemoteControl. The RemoteControl is a battery-powered device, it cannot be controlled by the device manager but it can be used to control the Radio and the Television.
 
