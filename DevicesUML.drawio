@@ -63,7 +63,7 @@
                 <mxCell id="162" value="+ getFrequencyOfChannel( channel: int ): double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="15" vertex="1">
                     <mxGeometry y="86" width="370" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="223" value="+ getFrequeenciesAllChannels( ): String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="15">
+                <mxCell id="223" value="+ getFrequenciesAllChannels( ): String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="15">
                     <mxGeometry y="112" width="370" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="197" style="edgeStyle=none;html=1;entryX=0.492;entryY=1.003;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=block;endFill=0;" parent="1" source="31" target="161" edge="1">
