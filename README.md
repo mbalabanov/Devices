@@ -9,13 +9,13 @@ In general, any powered device can be powered on and off individually. There are
 There are four types of grid-powered devices:
 - CoffeeMaker
 - TableLamp
-- Radio
-- Television
+- Radio (BroadCastReceiver)
+- Television (BroadCastReceiver)
 
 There is one type of battery-powered device:
 - RemoteControl
 
-A device manager can power multiple or all grid-powered devices on and off. A type of device called BroadcastReceivers can be controlled by a RemoteControl. The RemoteControl is a battery-powered device, it cannot be controlled by the device manager but it can be used to control the Radio and the Television.
+The GridpoweredDeviceManager can power multiple or all grid-powered devices on and off. Radio and Television are a type of device called BroadcastReceivers can be controlled by a RemoteControl. The RemoteControl is a battery-powered device, it cannot be controlled by the The GridpoweredDeviceManager but it can be used to control the Radio and the Television.
 
 All devices classes are subclasses of the super-class PoweredDevices. The classes for Radio and Television inherit the class BroadcastDevices, which in turn inherits the super-class PoweredDevice. The BroadCastDevice class also implements the interface RemoteControllable and has a loose association with the RemoteControl class.
 
